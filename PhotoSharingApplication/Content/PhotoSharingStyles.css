@@ -1,0 +1,23 @@
+﻿@media only screen and (max-width: 500px) {
+    .topmenu {
+        float: left;
+        background-color: #cccccc;
+        width: 100px;
+        height: 35px;
+        text-align: center;
+        line-height: 2em;
+        border-radius: 5px;
+        margin: 5px;
+    }
+
+}
+.topmenu {
+    float: left;
+    background-color: #cccccc;
+    width: 200px;
+    height: 35px;
+    text-align: center;
+    line-height: 2em;
+    border-radius: 5px;
+    margin: 5px;
+}

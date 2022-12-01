@@ -4,27 +4,29 @@
     <h3>"@item.Title"</h3>
     if (item.PhotoFile != null)
     {
-        <img width="200"
+        <img class="photo-index-card-img"
              src="@Url.Action("GetImage",
 "Photo",
 new { id = item.PhotoID })" />
 
     }
-    <p>
+    <span class="display-label">
         Created By:
-        @Html.DisplayFor(
-        model => item.UserName)
-    </p>
-    <p>
+    </span>
+    <span class="display-field">
+        @Html.DisplayFor(model => item.UserName)
+    </span>
+
+    <span class="display-label">
         Created On:
-        @Html.DisplayFor(
-        model => item.CreatedDate)
-    </p>
+    </span>
+    <span class="display-field">
+        @Html.DisplayFor(model => item.CreatedDate)
+    </span>
+
     @Html.ActionLink("Display", "Display",
     new { id = item.PhotoID })
 
 }
-
-
-
-
+<div class="photo-index-card">
+    <div class="photo-metadata">
